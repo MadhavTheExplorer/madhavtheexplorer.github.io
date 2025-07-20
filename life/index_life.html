@@ -1,0 +1,31 @@
+---
+layout: page
+title: Life
+---
+<div>
+  Here you will find various life experiences I have had over the years, my learnings from them, and how they have shaped me as a person.
+  This is a collection of my hobbies and interests that I have pursued in my free time.
+</div> </br>
+
+
+<div id="lifes-list">
+  {% for life in site.life %}
+  <div class="life-list">
+    <div id="#{{ life.name | slugize }}"></div>
+    <h3 class="post-list-heading line-bottom">
+      <a href="{{ life.url }}">{{ life.title }}</a>
+    </h3>
+    {{ life.content | markdownify }}
+      <ul class="post-list">
+      {% assign life_category = life.categories | first %}
+      {% for post in site.posts %}
+        {% if post.categories contains life_category %}
+        <li>
+          {% include post_preview.html post=post %}
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

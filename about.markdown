@@ -1,0 +1,30 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+Journey of the explorer begins!
+
+With his parents controlling the reigns as a child, luckily pushing him to stride through school, music and sports. This encouraged to culture a multi faceted view and appreciation of different fields right from start.
+
+Then as per custom around his region, he should decide for himself to pursue either science, commerce or arts, thereby restricting himself somewhat from certain knowledge spheres. He decides to choose science (dropping biology, 'cuz he was instilled upon the fear of jargons since his schooldays), to give himself little more flexibility in understanding various concepts later on in life.
+
+This opens his options to architecture, hotel management, design and engineering. So he starts learning architectural drawing and science. After two years of studies, he ends up giving entrance exam for all available options, hoping that the results would allow him to eliminate some of his choices.
+
+Sadly, he fares well in all exams. So none of the options are automatically eliminated from his consideration as he had hoped. Not knowing his true passion yet, he decides to take up engineering. Only because it provides him with slightly more flexibility.
+
+In his first year of engineering, he reinvokes his passion for swimming, and ends up representing his college at inter college Aquatics meet in Kharagpur. Apart from this, to quench his burning fire for robotics, he participates in bluetooth controlled toy car making competition and later in RC plane competition. He also gets to volunteer as an organizer for Asia's largest Cultural fest and Technology fest which are hosted by his university itself, giving him the exposure to organizing side of large scale events (150K+ footfall). But shortly after, Corona virus pandemic hits India in March 2020, thereby driving him to his home for online education. 
+
+Due to his decent scores in first year, he is able to switch his field of study from a focused metallurgy engineering to a broader (generalized) Mechanical engineering, which he loved.
+After this fortunate turn off events, he now starts considering to explore robotics and control subjects. Luckily enough, his university allows him to do a minor degree on top of Bachelor's and Master's intergrated mechanical engineering. He decides to do only one systems and controls engineering minor resisting his inclination to load himself further by doing an additional electrical engineering minor.
+
+Apart from the mandatory courses, he decides to explore various other student group offerings. He simulates control of an inverted pendulum on matlab under the guidance of Controls and Dynamical Systems group. A little exploration in the field of astronomy by doing a project to trace the analemma shape, which is the relative trajectory of the sun wrt a particular location on earth throughout the year, using python to implement his mathematical constructs.
+
+Later down the year he decides to explore the finance field by participating in an Algorithmic trading workshop called Finsearch, organised by the finance club. In a team of four, they studied about pairs trading and back tested the strategy on equity stocks data. His team got awarded a cash price for being in among top 4 teams, shortlisted for making a very comprehensive report on the subject at hand.
+
+His interest in understanding every subject he studies gets him accredited with Institute Academic Award twice, for being among top 2 scorers in his class for an entire year. He loves his optimization and design projects as part of courses. He joins Tech-Team Stride and works on researching about quadrupedal control (yes, similar to Boston dynamics, it wasn't so developed back then). Various types of controllers like PID, LQR, MPC. He participated in inter college tech competition to design an automatic way of ev battery charging, securing second place after 10 days of hard work, preparing CAD, control, simulation and BOM in a team of 10.
+
+His passion for swimming continued after the lockdown due to pandemic ended. He was appointed as the captain of the water polo team, which gave him valuable experience in team management, coordination, training and efficient use of players and resouces to become best. For the first time in 7 years, his team was able to reach semi finals. In his next tournament, they came out as the first runners up, thereby ending his college days water polo.
+
+He got to witness a lot of college politics, during student position elections, intern and placement season, competitiveness among fellow classmates etc. Students formed their own groups and supported members from within their group and appearing hostile, hiding information (rather not telling important information unless asked) among various other things. Students pursued consulting, software development, web and app development, finance profiles and quant profiles. Very few appeared to be interested in what they were studying (aka Core). This was I believe due to lack of potential career opportunities, which I would call the failure of government, industry and researchers combined. Jobs are fueled by demand, salaries come from government and taxes. Money is made or exchanged for the perceived profit, need or satisfaction. Though the education makes your thinking analytical but it does little for creativity. And its knowledge is hardly used in most job profiles. I know it is important to get a diverse view of all the subjects to make an informed decision, there should be a balance between depth, exploration, decisiveness and relevance. All of which should be the responsibility of educators, government and also parents to a certain extent. Some kind of map of sector wise demand would allow students to make informed choices. Opportunities to explore these sectors is also essential.
