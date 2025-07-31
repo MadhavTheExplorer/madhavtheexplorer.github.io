@@ -4,7 +4,7 @@ title:  "Discretizing Systems"
 date:   2025-07-27 13:40:34 +0530
 categories: controls
 tags: controls
-image: /projects/blog_setup/assets/img/gui_img.png
+image: /projects/controls/assets/img/discretize_spring_mass_system.png
 comments: true
 summary: "After having a continuous state space representation of the system, sometimes it is important to convert it to discrete time representation."
 ---
