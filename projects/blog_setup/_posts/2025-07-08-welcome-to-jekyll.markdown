@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2025-07-08 17:40:34 +0530
 categories: blog_setup
 tags: github_pages jekyll minima
-image: /projects/blog_setup/assets/img/gui_img.png
+image: /projects/blog_setup/assets/img/jekyll.png
 comments: true
 summary: "Having a space to collect, organise and share my thoughts is what drove me to start writing my own blog. In this post I'll be sharing how I setup my own (free!) blog with github pages and tools."
 ---
