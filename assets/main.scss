@@ -49,6 +49,16 @@
   border-bottom-color: $grey-color-light;
 }
 
+.expedition-list-item {
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit / 2;
+  border-bottom: 1px dotted $grey-color-light;
+
+  h3, p {
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+
 .page-content {
   background-color: rgba(255, 255, 255, 0.8);
   margin-top: auto;
