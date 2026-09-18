@@ -3,16 +3,17 @@ layout: page
 title: Projects
 ---
 <div>
-  This is a map of things I have built and the trails of ideas behind them. Expeditions point to working artifacts; exploration series collect the articles and tutorials written along the way.
-</div><br/>
+  This is a map of things I have built and the trails of ideas behind them. Expeditions point to working artifacts;
+  exploration series collect the articles and tutorials written along the way.
+</div><br />
 
 <h2 class="post-list-heading line-bottom">Expeditions</h2>
 <div id="expeditions-list">
   {% assign expeditions = site.data.repositories.generated | sort: "started" | reverse %}
   {% for expedition in expeditions %}
-    {% include expedition_preview.html expedition=expedition %}
+  {% include expedition_preview.html expedition=expedition %}
   {% else %}
-    <p>No public expeditions have been cataloged yet.</p>
+  <p>No public expeditions have been cataloged yet.</p>
   {% endfor %}
 </div>
 
@@ -25,14 +26,14 @@ title: Projects
       <a href="{{ project.url }}">{{ project.title }}</a>
     </h3>
     {{ project.content | markdownify }}
-      <ul class="post-list">
+    <ul class="post-list">
       {% assign project_category = project.categories | first %}
       {% for post in site.posts %}
-        {% if post.categories contains project_category %}
-        <li>
-          {% include post_preview.html post=post %}
-        </li>
-        {% endif %}
+      {% if post.categories contains project_category %}
+      <li>
+        {% include post_preview.html post=post %}
+      </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>
