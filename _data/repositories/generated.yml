@@ -1,4 +1,22 @@
 # Generated from public repository manifests. Do not edit by hand.
+- repository: MadhavTheExplorer/SOFA_mpc
+  url: https://github.com/MadhavTheExplorer/SOFA_mpc
+  title: SOFA Soft-Robot Model Predictive Control
+  summary: Experiments in cable-actuated soft-robot simulation, Koopman system identification,
+    and model predictive control using SOFA.
+  status: archived
+  kind: research
+  fields:
+  - soft-robotics
+  - model-predictive-control
+  - system-identification
+  - simulation
+  family: robotics-and-autonomy
+  related_repos:
+  - MadhavTheExplorer/MPC_simple_test
+  featured: true
+  started: 2023-01
+  links: {}
 - repository: MadhavTheExplorer/Robot-Arm
   url: https://github.com/MadhavTheExplorer/Robot-Arm
   title: Robotic Charging Challenge
@@ -17,3 +35,51 @@
   links: {}
   series:
   - controls
+- repository: MadhavTheExplorer/Fenics_Project
+  url: https://github.com/MadhavTheExplorer/Fenics_Project
+  title: FEniCS Heat and Structural Optimization Studies
+  summary: Legacy FEniCS experiments in transient laser heating, membrane shape optimization,
+    and heat-sink and cantilever topology optimization.
+  status: archived
+  kind: research
+  fields:
+  - finite-element-method
+  - heat-transfer
+  - topology-optimization
+  - scientific-computing
+  family: computational-engineering
+  featured: false
+  started: 2021-01
+  links: {}
+- repository: MadhavTheExplorer/Vision-Transformer
+  url: https://github.com/MadhavTheExplorer/Vision-Transformer
+  title: Vision Transformers for Small Datasets
+  summary: TensorFlow experiments comparing compact ViT and locality-enhanced SL-ViT
+    models on CIFAR-10 and CIFAR-100.
+  status: archived
+  kind: research
+  fields:
+  - computer-vision
+  - vision-transformers
+  - deep-learning
+  - image-classification
+  family: machine-learning
+  featured: false
+  started: 2022-11
+  links:
+    upstream: https://keras.io/examples/vision/vit_small_ds/
+- repository: MadhavTheExplorer/firstPhysicsEngineSFML
+  url: https://github.com/MadhavTheExplorer/firstPhysicsEngineSFML
+  title: SFML Verlet Physics Engine
+  summary: An SFML 3 visualization of colored circles using Verlet integration, gravity,
+    pairwise collision response, and circular confinement.
+  status: archived
+  kind: learning
+  fields:
+  - physics-simulation
+  - computer-graphics
+  - cpp
+  family: simulation-and-modeling
+  featured: false
+  started: 2025-03
+  links: {}
