@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://madhavtheexplorer.github.io/schema/project.schema.json",
+  "title": "Explorer project manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "summary",
+    "status",
+    "kind",
+    "fields",
+    "family",
+    "featured",
+    "started",
+    "links"
+  ],
+  "properties": {
+    "title": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 240 },
+    "status": {
+      "enum": ["active", "maintained", "archived", "incubating"]
+    },
+    "kind": {
+      "enum": ["software", "research", "document", "hardware", "learning"]
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/slug" }
+    },
+    "family": { "$ref": "#/$defs/slug" },
+    "related_repos": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+      }
+    },
+    "featured": { "type": "boolean" },
+    "started": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "format": "uri" }
+    }
+  },
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    }
+  }
+}

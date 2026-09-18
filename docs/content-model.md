@@ -4,7 +4,7 @@ The site records exploration in four connected forms. Each form has a distinct o
 
 ## Expeditions
 
-Expeditions are repository-backed things that were built, investigated, or documented. Their core metadata comes from `.explorer/project.yml` in the repository and is collected into `_data/repositories/generated.yml`.
+Expeditions are repository-backed things that were built, investigated, or documented. Their core metadata comes from `.explorer/project.yml` in the repository and is collected into `_data/repositories/generated.yml` by `scripts/generate_catalog.py`.
 
 Required repository fields:
 
@@ -21,7 +21,7 @@ started: 2026-09
 links: {}
 ```
 
-Generated site records add `repository`, `url`, and optional `series` identifiers. Generated data must not contain private repositories.
+Generated site records add `repository` and `url`. The site-owned `_data/repositories/overrides.yml` adds optional editorial relationships such as `series`. Generated data must not contain private repositories.
 
 ## Exploration Series
 
@@ -46,4 +46,4 @@ Files in `_life` and their posts contain hobbies, experiences, and non-technical
 - Repository metadata describes the artifact; site copy may add editorial context but must not contradict it.
 - Collaborations retain upstream attribution and describe the explorer's specific contribution.
 - Private repositories and unpublished work are excluded from generated data.
-- Catalog automation opens a pull request so additions remain editorially reviewable.
+- Catalog automation runs weekly or on demand, validates manifests, builds the site, and opens an auto-merge pull request when data changes.

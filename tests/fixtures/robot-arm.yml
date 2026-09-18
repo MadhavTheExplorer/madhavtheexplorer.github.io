@@ -1,0 +1,13 @@
+title: Robotic Charging Challenge
+summary: A six-degree-of-freedom robotic charging-station prototype combining motion planning, computer vision, Simscape simulation, and CAD.
+status: archived
+kind: hardware
+fields:
+  - robotics
+  - motion-planning
+  - computer-vision
+  - control
+family: robotics-and-autonomy
+featured: true
+started: 2023-02
+links: {}

@@ -1,0 +1,4 @@
+# Editorial relationships owned by the site rather than individual repositories.
+MadhavTheExplorer/Robot-Arm:
+  series:
+    - controls

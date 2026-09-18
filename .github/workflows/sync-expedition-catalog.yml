@@ -1,0 +1,60 @@
+name: Sync expedition catalog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: scripts/requirements-catalog.txt
+
+      - name: Install catalog dependencies
+        run: python -m pip install -r scripts/requirements-catalog.txt
+
+      - name: Test catalog generator
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Generate catalog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_catalog.py
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Create catalog pull request
+        id: catalog-pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/expedition-catalog
+          delete-branch: true
+          commit-message: "chore: sync expedition catalog"
+          title: "chore: sync expedition catalog"
+          body: |
+            Automated catalog update from validated public repository manifests.
+
+            Tests and the Jekyll build completed before this pull request was created.
+          labels: automation,expedition-catalog
+
+      - name: Enable auto-merge
+        if: steps.catalog-pr.outputs.pull-request-operation == 'created' || steps.catalog-pr.outputs.pull-request-operation == 'updated'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge "${{ steps.catalog-pr.outputs.pull-request-number }}" --repo "${{ github.repository }}" --squash --auto
