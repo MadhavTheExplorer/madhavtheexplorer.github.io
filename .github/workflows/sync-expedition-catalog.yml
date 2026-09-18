@@ -44,6 +44,7 @@ jobs:
         id: catalog-pr
         uses: peter-evans/create-pull-request@v7
         with:
+          add-paths: _data/repositories/generated.yml
           branch: automation/expedition-catalog
           delete-branch: true
           commit-message: "chore: sync expedition catalog"
